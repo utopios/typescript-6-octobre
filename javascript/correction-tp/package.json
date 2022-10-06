@@ -1,0 +1,11 @@
+{
+    "type" : "module",
+    "dependencies": {
+      "process": "^0.11.10",
+      "readline": "^1.3.0",
+      "readline-sync": "^1.4.10"
+    },
+    "scripts": {
+        "start": "node ./classes/index.js"
+    }
+}
