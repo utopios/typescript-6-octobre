@@ -1,0 +1,5 @@
+Créer une application annuaire en typescript qui permet de gérer des contacts.
+L'application doit permettre de :
+- Ajouter des contacts.
+- Rechercher un contact.
+- Afficher la liste des contacts.
