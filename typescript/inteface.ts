@@ -1,30 +1,30 @@
-interface Animal {
-    pattes: number,
-    yeux: number,
-    chanter?: (x: string) => void
-}
-
-// class Lion implements Animal {
-//     public pattes: number;
-//     public yeux: number;
-
-//     // chanter(x: string) {
-//     //     console.log(x);  
-//     // }
+// interface Animal {
+//     pattes: number,
+//     yeux: number,
+//     chanter?: (x: string) => void
 // }
 
-const afficherAnimal = (a: Animal) : void => {
-    console.log(a.pattes);
-    console.log(a.yeux);
-}
+// // class Lion implements Animal {
+// //     public pattes: number;
+// //     public yeux: number;
 
-//afficherAnimal({pattes: 3, yeux: 24, chanter: (x) => console.log(x)});
+// //     // chanter(x: string) {
+// //     //     console.log(x);  
+// //     // }
+// // }
 
-const obj = {
-    pattes: 12,
-    yeux: 24
-}
+// const afficherAnimal = (a: Animal) : void => {
+//     console.log(a.pattes);
+//     console.log(a.yeux);
+// }
 
-type Animals = {
+// //afficherAnimal({pattes: 3, yeux: 24, chanter: (x) => console.log(x)});
 
-}
+// const obj = {
+//     pattes: 12,
+//     yeux: 24
+// }
+
+// type Animals = {
+
+// }
