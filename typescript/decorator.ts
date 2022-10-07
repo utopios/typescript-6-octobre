@@ -1,45 +1,43 @@
-function simpleDecoratorClass(target: Function): void {
-    target.prototype.id = Math.random();
-}
+// function simpleDecoratorClass(target: Function): void {
+//     target.prototype.id = Math.random();
+// }
 
-function reportableClassDecorator<T extends { new (...args: any[]): {} }>(constructor: T) {
-    return class extends constructor {
-      reportingURL = "http://www...";
-    };
-  }
+// // function DemoDecorator(): ClassDecorator {
+// //     return function(target:any) : any {    
+// //         target.prototype.id = Math.random();
+// //     }
+// // }
 
-  @reportableClassDecorator
-  class BugReport {
-    type = "report";
-    title: string;
-   
-    constructor(t: string) {
-      this.title = t;
-    }
-  }
+// @simpleDecoratorClass
+// export class UserWithDecorator {
+//     constructor(private name:string) {
 
-function demoDecoratorMethod(...args: any): MethodDecorator {
-    return function(target: Object, propertyKey: string | symbol, descriptor: PropertyDescriptor) {
-        const originalMethod = descriptor.value;
-        descriptor.value = (...args: any) => {
-            const resultMethod = originalMethod.apply(target, args);
-            return resultMethod + 2;
-        }
-    }
-}
+//     }
+// } 
 
-class Calculatrice {
+// function demoDecoratorMethod(...args: any): MethodDecorator {
+//     return function(target: Object, propertyKey: string | symbol, descriptor: PropertyDescriptor) {
+//         const originalMethod = descriptor.value;
+//         descriptor.value = (...args: any) => {
+//             const resultMethod = originalMethod.apply(target, args);
+//             return resultMethod + 2;
+//         }
+//     }
+// }
 
-    @demoDecoratorMethod()
-    add(a: number, b: number) {
-        return a + b
-    }
-}
+// class Calculatrice {
 
-const maCalculatrice = new Calculatrice();
+//     @demoDecoratorMethod()
+//     add(a: number, b: number) {
+//         return a + b
+//     }
+// }
 
-console.log(maCalculatrice.add(1, 1));
+// const maCalculatrice = new Calculatrice();
 
-const myUser = new BugReport("toto");
+// console.log(maCalculatrice.add(1, 1));
 
-console.log(myUser);
+// const userWithDecorateur = new UserWithDecorator("test")
+
+// //@ts-ignore
+// console.log(userWithDecorateur.id)

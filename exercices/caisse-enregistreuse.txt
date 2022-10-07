@@ -1,0 +1,8 @@
+Exercise - Caisse enregistreuse
+
+-	Vous pourrez utiliser une classe Caisse possédant une collection de produits et une collections de ventes
+-	Vous pourrez utiliser une classe Produit comportant un numéro, un nom, un prix et un stock
+-	Vous pourrez utiliser une classe Vente possédant un numéro, une liste de produits et une méthode permettant de
+    valider la vente, ce qui confirmera le paiement et changera le stock des produits
+-	Deux classes de paiements, une classe PaiementCB et une classe PaiementEspece, qui auront une méthode pour payer (pour les espèces, pensez aussi au champ monnaie)
+-	(Facultatif) Le tout pourra être relié par une classe IHM (Interface Homme Machine) servant à intéragir avec l’application pour l’utilisateur.
