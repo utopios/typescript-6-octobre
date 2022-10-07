@@ -12,3 +12,5 @@ poissonRouge = {
     yeux: 3,
     href: "#FFFFFF"
 };
+//Litteral type
+let directions;
