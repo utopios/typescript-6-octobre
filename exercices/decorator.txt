@@ -1,0 +1,3 @@
+Exercice decorateur de classe
+
+- Créer un décorateur de classe qui permet d'ajouter une propriété et sa valeur
