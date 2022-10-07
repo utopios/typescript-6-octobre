@@ -1,0 +1,13 @@
+{
+    "include": [
+        "classes/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ],
+    "compilerOptions": {
+        // "outFile": "./",
+        "outDir": "js",
+        "target": "ESNext",
+    },
+}

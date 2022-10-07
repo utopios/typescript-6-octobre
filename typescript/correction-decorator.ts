@@ -14,4 +14,4 @@ class UserWithDate {
 const userDate = new UserWithDate();
 
 //@ts-ignore
-console.log(userDate);
+console.log(userDate.date);
